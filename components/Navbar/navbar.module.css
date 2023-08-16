@@ -1,0 +1,189 @@
+#masthead{
+    max-width: 960px;
+    margin: auto;
+}
+.wrapper {
+    max-width: 960px;
+    margin: auto;
+}
+
+#masthead2{
+    display: flex;
+    margin-top: 30px;
+}
+
+.customLogoLink {
+    display: inline-block;
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    margin-top: 35px;
+}
+
+
+.siteBranding .customLogoLink img{
+    height: auto;
+    max-width: 100%;
+    cursor: pointer;
+}
+.menuToggle {
+    background-color: transparent;
+    color: #FF6928;
+    border: 0;
+    margin: auto;
+    font-size: 2em;
+    outline: none;
+}
+
+.mainNavigation{
+    display: block;
+    width: 100%;
+}
+
+
+.menuToggle{
+ display: none;
+}
+
+#primaryMenu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    padding-left: 10%; 
+}
+
+.mainNavigation ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.mainNavigation li {
+    position: relative;
+}
+
+#primaryMenu a {
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 1);
+}
+#primaryMenu a:hover {
+    color: rgba(255, 105, 40, 1);
+}
+
+.mainNavigation a {
+    display: block;
+    text-decoration: none;
+    color: #FF6928;
+
+}
+
+#secondaryMenu {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0 70px 0;
+    height: 50px;
+}
+#secondaryMenu a {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6em;
+    color: #FF6928;
+    margin-top: 20px;
+}
+#secondaryMenu a:hover {
+    color: #000;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.7em;
+}
+
+#menuItem21 {
+    width: 20%;
+    text-align: left;
+
+}
+#menuItem21:after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: -50%;
+    right: 0;
+    height: 150%;
+    width: 1px;
+  }
+#menuItem22 {
+    width: 35%;
+    text-align: center;
+}
+#menuItem22:after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: -50%;
+    right: 0;
+    height: 150%;
+    width: 1px;
+  }
+#menuItem23 {
+    width: 45%;
+    text-align: right;
+}
+
+.notShowing{
+    display: none;
+}
+
+.showing{
+    display: flex;
+}
+
+@media screen and (max-width: 50em){
+    #masthead2{
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .customLogo {
+        width: 80%;
+        height: 100%;
+    }
+    .menuToggle{
+        display: flex;
+    }
+    #primaryMenu{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 55px;
+        padding-left: 0%; 
+    }
+    #secondaryMenu {
+        font-size: 0.9em;
+        white-space: nowrap;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 37.5em) {
+    .menuToggle{
+        background-color: transparent;
+        color: #FF6928;
+        border: 0;
+        margin: auto;
+        font-size: 2em;
+        outline: none;
+    }    
+    .mainNavigation ul {
+        display: flex;
+    }
+    .menuMenu1Container,
+    .menuMenu2Container{
+        display: none;
+    }
+
+}
